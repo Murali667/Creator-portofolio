@@ -1,0 +1,122 @@
+NaturalSunshine/
+├─ index.html          (Home page)
+├─ about.html          (About page)
+├─ portfolio.html
+├─ blog.html
+├─ services.html
+├─ contact.html
+├─ css/
+│   └ style.css       (all CSS files go here)
+├─ images/
+│   ├ logo.png
+│   └ ...             (all .jpg, .png, .svg images go here)
+└─ js/
+    └ script.js       (all JavaScript files go here)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Natural Sunshine – Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Page content (header, sections, footer) will go here -->
+</body>
+</html>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <img src="images/hero-background.jpg" alt="Sunrise over fields" class="hero-img">
+  <div class="hero-text">
+    <h1>Welcome to Natural Sunshine</h1>
+    <p>Embrace natural living with our eco-friendly products and tips.</p>
+  </div>
+</section>
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="service-cards">
+    <div class="service">
+      <img src="images/icon1.png" alt="">
+      <h3>Service One</h3>
+      <p>Short description of service one.</p>
+    </div>
+    <!-- Repeat .service for other services -->
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Natural Sunshine. All rights reserved.</p>
+  <ul class="footer-nav">
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms</a></li>
+    <!-- Social links or other footer links -->
+  </ul>
+</footer>
+<body>
+  <nav class="navbar">…</nav>
+  <section class="hero">…</section>
+  <section id="about">…</section>
+  <section id="services">…</section>
+  <!-- other sections -->
+  <footer>…</footer>
+</body>
+
+:root {
+  /* Brand color palette */
+  --primary-color: #2E8B57;      /* e.g. forest green */
+  --secondary-color: #FFA500;    /* e.g. warm orange */
+  --accent-color: #FFD700;       /* e.g. gold */
+  --text-color: #333333;
+  --heading-font: 'Roboto Slab', serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--accent-color);
+}
+a {
+  color: var(--secondary-color);
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+<a href="index.html" class="brand">
+  <img src="images/logo.png" alt="Natural Sunshine Logo" class="logo">
+</a>
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* stack nav links vertically */
+  }
+  .hero-text {
+    text-align: center;     /* center hero text */
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 120px;           /* smaller logo on very small screens */
+  }
+  .service-cards {
+    flex-direction: column; /* stack service cards */
+  }
+}
